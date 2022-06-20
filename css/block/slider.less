@@ -1,0 +1,63 @@
+//main: ../style.less
+.zoom{
+    box-shadow: 0 20px 20px black;
+
+    display: inline;
+    border-radius: 100px;
+    margin:auto auto auto auto;
+    width: 60%;
+    transform: translateY(10%);
+  animation-name: Appearance;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(.1,-.6,.2,0);
+}
+
+@-webkit-keyframes Appearance {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-o-keyframes Appearance {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-moz-keyframes Appearance {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes Appearance {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+
+   
+.titl{
+    position: fixed;
+    font-size: 40px;
+    color: white;
+    z-index: 100;
+    text-align: center;
+    left: 43%;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    animation-name: Appearance;
+    animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(.1,-.6,.2,0);
+    text-shadow: 2px 2px 2px black ;
+  }
+ 
+    .over{
+        background-color: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+        animation-name: Appearance;
+        animation-duration: 0.5s;
+        animation-timing-function: cubic-bezier(.1,-.6,.2,0);
+      }

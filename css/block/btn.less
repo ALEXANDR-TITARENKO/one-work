@@ -1,0 +1,59 @@
+//main: ../style.less
+
+.btn{ 
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 30px;
+    background: white;
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
+    padding: 15px;
+    line-height: 0;
+    cursor: pointer;
+    color:black;
+    margin-left: 5px;
+    transition: background-color 0.2s linear ;
+
+&:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 15px rgba(65, 16, 16, 0.5)
+}
+}
+
+
+.btn2{ 
+    display: inline-block;
+    vertical-align: top;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px;
+    line-height: 0;
+    cursor: pointer;
+    color:black;
+    margin-left: 5px;
+    animation: animate_motion 5s 0s both infinite;
+}
+.animate-motion:hover {
+	animation: none;
+}
+ 
+@keyframes animate_motion {
+	0%, 20% {
+		transform: translate3d(0, 0, 0);
+	}
+	10%, 14%, 18%, 2%, 6% {
+		transform: translate3d(-7px, 0, 0);
+	}
+	12%, 16%, 4%, 8% {
+		transform: translate3d(7px, 0, 0);
+	}
+}
+
+
